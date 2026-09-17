@@ -1,0 +1,23 @@
+# Synthetic regression fixture: SSD_REVIEW_0.1 zero pose and proposal incompatibility.
+# See docs/implementation-profile.md; proposal_* rows retain original sections 29/36 poses.
+[SCENE]
+Version	0.1
+Unit	meter
+CoordinateSystem	SSD_RH_ZUP
+AngleUnit	degree
+Profile	SSD_REVIEW_0.1
+[OBJECT]
+zero	screen	Zero pose	none	0	0	0	0	0	0	1
+upright	screen	Explicit upright pose	none	0	4	1.7	0	90	0	1
+proposal_front	screen	Original section 36 front	none	0	4	1.7	180	0	0	1
+proposal_left	screen	Original section 36 left	none	-3	1	1.5	90	0	0	1
+proposal_right	screen	Original section 36 right	none	3	1	1.5	-90	0	0	1
+proposal_floor	surface	Original section 29 floor	none	0	0	0.01	0	90	0	1
+[SCREEN]
+zero	6	3.375
+upright	6	3.375
+proposal_front	6	3.375
+proposal_left	4	3
+proposal_right	4	3
+[SURFACE]
+proposal_floor	10	10

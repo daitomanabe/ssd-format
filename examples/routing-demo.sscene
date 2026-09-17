@@ -1,0 +1,26 @@
+# Synthetic example only; not any Room A/B/C routing proposal.
+[SCENE]
+Version	0.1
+Name	Synthetic routing and parent demo
+Unit	meter
+CoordinateSystem	SSD_RH_ZUP
+AngleUnit	degree
+[OBJECT]
+rig	truss	Shared movable rig	none	0	0	0	0	0	0	1
+front	screen	Front screen	rig	0	4	2	0	90	0	1
+side	led	Side LED	rig	-3	1	2	90	0	90	1
+pj	projector	Projector	none	0	-2	3	0	0	0	1
+spk	speaker	Speaker	rig	-2	3	2	0	0	0	1
+[SCREEN]
+front	6	3
+[LED]
+side	4	2	1920	1080
+[PROJECTOR]
+pj	output_0	front	1920	1080
+[DISPLAY]
+output_0	GPU output	3840	1080
+[PIXELMAP]
+map_front	output_0	front	0	0	1920	1080	0
+map_side	output_0	side	1920	0	1920	1080	0
+[SPEAKER]
+spk	1	0	0	0
